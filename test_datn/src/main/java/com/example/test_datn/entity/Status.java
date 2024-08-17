@@ -11,18 +11,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name="category")
+@Table(name="status")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Category {
-
+public class Status {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "cate_name")
-    private String cateName;
-
+    @Column(name = "status_name")
+    private String statusName;
 }
